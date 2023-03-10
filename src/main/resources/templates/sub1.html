@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/extras/spring-security"
+      layout:decorate="~{layouts/layout1}">
+      
+<body>
+ <div layout:fragment="content">
+  <main>
+    <div class = "submaintitle">
+      이달의 책
+    </div>
+    <div class = "mainpage">
+      <div class = "maincontent">
+        <div class = "maintext1">
+          "상실, 사랑 그리고 숨어 있는 <span>삶의 질서</span>에 관한 이야기"
+        </div>
+        <div class = "box img">
+        </div>
+        <div class = "maintext2">
+          <div class = "context1 text1">
+            물고기는 존재하지 않는다
+          </div>
+          <div class = "context2 text">
+            우리는 누군가의 이야기에 귀 기울이는 것만으로 크고 작은 삶의 문제를 풀어나갈 <span>용기</span>를 얻기도 한다.
+          </div>
+          <div class = "context3 text">
+            더 이상 살아갈 의지도 희망도 사라져버린 어느날, 운명처럼 <span>'한 사람'</span>의 이야기가 다가왔다.
+          </div>
+          <div class = "context3 text">
+            "인간을 비롯해 모든 생명체는 실질적이고 구체적인 방식으로 이 지구에, 사회에, 서로에게 <span>중요해요.</span> 아버지, 우리는 모두 중요해요!"
+          </div>
+        </div>
+      </div>
+      <div class = "maincontent2">
+        <div class = "submaintitle">
+          카드리뷰
+        </div>
+        <div class = "slideshow">
+          <ul class = "slides">
+            <li><img src = "https://image.aladin.co.kr/product/28465/73/cardview/S172835752_t3.jpg"></li>
+            <li><img src = "https://image.aladin.co.kr/product/28465/73/cardview/S172835752_t4.jpg"></li>
+            <li><img src = "https://image.aladin.co.kr/product/28465/73/cardview/S172835752_t5.jpg"></li>
+            <li><img src = "https://image.aladin.co.kr/product/28465/73/cardview/S172835752_t6.jpg"></li>
+            <li><img src = "https://image.aladin.co.kr/product/28465/73/cardview/S172835752_t7.jpg"></li>
+            <li><img src = "https://image.aladin.co.kr/product/28465/73/cardview/S172835752_t8.jpg"></li>
+          </ul>
+          <p class = "controller">
+            <span class = "prev">&lang;</span>
+            <span class = "next">&rang;</span>
+          </p>
+        </div>
+      </div>
+      <div class = "maincontent3">
+        <div class = bookcon>
+        <div class = "submaintitle">
+          책소개
+        </div>
+        <ul class = "bookcon1">
+          <li>‘방송계의 퓰리처상’으로 불리는 피버디상(Peabody Awards)을 수상한 과학 전문기자 룰루 밀러의 경이로운 논픽션 《물고기는 존재하지 않는다》는 여러 언론 매체에서 ‘2020년 최고의 책’으로 선정할 만큼 수많은 찬사를 받은 화제의 베스트셀러다.</li>
+          <li>집착에 가까울 만큼 자연계에 질서를 부여하려 했던 19세기 어느 과학자의 삶을 흥미롭게 좇아가는 이 책은 어느 순간 독자들을 혼돈의 한복판으로 데려가서 우리가 믿고 있던 삶의 질서에 관해 한 가지 의문을 제기한다. “물고기가 존재하지 않는다는 것은 엄연한 하나의 사실이다.</li>
+          <li>그렇다면 우리는 또 무엇을 잘못 알고 있을까?” 하고 말이다. 누군가에게는 이 질문이 살아가는 데 아무런 영향을 미치지 않을 수도 있다. 하지만 세상을 바라보는 “진실한 관계들”에 한층 가까이 다가가기 위해 노력하는 사람들에게는 분명 이 책이 놀라운 영감과 어느 한쪽으로도 치우치지 않는 폭넓은 시야를 제공해줄 것이다.</li>
+        </ul>
+        </div>
+        <div class = bookcon2>
+          <div class = "submaintitle">
+            저자 및 역자 소개
+          </div>
+        <ul class = "bookcon3">
+          <li class = "title">-룰루 밀러 (Lulu Miller) (지은이)</li>
+          <li>방송계의 퓰리처상’으로 불리는 피버디상(Peabody Awards)을 수상한 과학 전문기자로, 15년 넘게 미국공영라디오방송국(NPR)에서 일하고 있다.
+            인간의 행동을 형성하는 ‘보이지 않는 힘들’에 관한 이야기를 나누는 NPR의 〈인비저빌리아(Invisibilia)〉의 공동 기획자이고, 뉴욕공영라디오방송국(WNYC)의 〈라디오랩(Radiolab)〉에도 자주 참여하고 있으며, 《뉴요커》, 《VQR》, 《오리온》, 《일렉트릭 리터리처(Electric Literature)》, 《캐터펄트(Catapult)》 등에 꾸준히 글을 기고해왔다.
+            지구에서 가장 좋아하는 지점은 험프백락(블루리지산맥의 험프백산 정상 부근에 있는 녹암 노두)이다.
+            룰루 밀러의 논픽션 데뷔작 《물고기는 존재하지 않는다》는 전기이자 회고록이자 과학적 모험담으로, 혼돈이 항상 승리하는 세계에서 꿋꿋이 버텨내는 삶에 관한 우화처럼 읽히는 경이로운 책이다.</li>
+            <li class = "title" >-정지인 (옮긴이)</li>
+            <li>번역하는 사람. 《물고기는 존재하지 않는다》, 《우울할 땐 뇌과학》, 《욕구들》, 《당신에게 무슨 일이 있었나요》, 《불행은 어떻게 질병으로 이어지는가》, 《내 아들은 조현병입니다》 등을 번역했다.</li>
+        </ul>
+      </div>
+    </div>
+      <script>
+        const slides = document.querySelector('.slides'); //전체 슬라이드 컨테이너
+        let currentIdx = 0; // 현재 슬라이드 index
+        const slideCount = 2; //슬라이드개수
+        const prev = document.querySelector('.prev'); //이전버튼
+        const next = document.querySelector('.next'); //다음버튼
+        const slideWidth = 1400; //한개의 슬라이드 넓이
+  
+        function moveSlide(num) {
+          slides.style.left = -num * 1400 + 'px';
+          currentIdx = num;
+        }
+
+        prev.addEventListener('click', function () {
+          if (currentIdx !== 0) moveSlide(currentIdx - 1);
+        });
+
+        next.addEventListener('click', function () {
+          if (currentIdx !== slideCount - 1) {
+            moveSlide(currentIdx + 1);
+          }
+        });
+      </script>
+    </div>
+  </main>
+
+</body>
+</html>

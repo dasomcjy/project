@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/extras/spring-security"
+      layout:decorate="~{layouts/layout1}">
+      
+
+ <div layout:fragment="content">
+ <body>
+  <main>
+    <div class = "submaintitle">
+      감상나누기
+    </div>
+    <form th:object="${questionForm}" method="post">
+    <input type="hidden" th:name="${_csrf.parameterName}" th:value="${_csrf.token}" />
+     <div th:replace="~{form_errors :: formErrorsFragment}"></div>
+    <div class="write">
+      <table>
+        <tr>
+          <td class = wrtitle>책제목</td>
+          <td><input class = "write1" type ="text" th:field="*{subject}"  placeholder ="책제목을 입력해주세요"></td>
+        </tr>
+        <tr>
+          <td class = wrtitle>사진 첨부</td>
+          <td><input type = 'file'></td>
+        </tr>
+        <tr>
+          <td class = wrtitle>감상적기</td>
+          <td><p><textarea th:field="*{content}" class = "write3" placeholder = "함께 나누고 싶은 감상을 입력해주세요!"></textarea></p></td>
+        </tr>
+        <tr>
+          <td class = "write4" ><input type="submit" value = "글올리기"></td>
+        </tr>
+      </table>
+    </div>
+    </form>
+  </main>
+</body>
+</html>

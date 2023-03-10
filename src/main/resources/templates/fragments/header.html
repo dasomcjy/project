@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+ 
+  <div th:fragment="header">
+  <header>
+  	<div class = "head">
+      <div class = "logo">
+       <a href="/index"><img src = "/img/logo2.png"></a>
+      </div>
+      <ul class = "topmenu">
+        <li><a href ="/sub1">이달의 책</a></li>
+        <li><a href = "/sub2">감상나누기</a></li>
+        <li><a href = "/sub3">책둘러보기</a></li>
+        <li><a href = "/sub4">자유게시판</a></li>
+      </ul>
+      <ul class = "rightmenu">
+        <li  sec:authorize="isAnonymous()"><a href = "/member/login">로그인</a></li>
+        <li  sec:authorize="isAuthenticated()"><a href = "/member/logout">로그아웃</a></li>
+        <li><a href="/member/join">회원가입</a></li>
+      </ul>
+     </div> 
+   </header>   
+ </div>
+

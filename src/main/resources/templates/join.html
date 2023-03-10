@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/extras/spring-security"
+      layout:decorate="~{layouts/layout1}">
+    
+     
+<body>
+ <div layout:fragment="content">
+  <main>
+    <div class = subjoin>
+      <div class = "jointitle"> 회원가입 </div>
+      
+      <form th:action="@{/member/join}" method="post" th:object="${memberDTO}" >
+       <div th:replace="~{form_errors :: formErrorsFragment}"></div>
+   <!--  <div th:fragment="formErrorsFragment" class="alert alert-danger" role="alert" th:if="${#fields.hasAnyErrors()}">
+      <div th:each="err : ${#fields.allErrors()}" th:text="${err}"></div>
+   </div>--> 
+      <table>
+         <tr style="height:50px">
+          <td class = "title">닉네임(ID)</td>
+          <td> <input type ="text"   th:field="*{username}"></td>
+        </tr>
+          <tr style="height:50px">
+          <td class = "title">email</td>
+          <td><input type ="text"  th:field="*{email}" ></td>
+        </tr>
+         <tr style="height:50px">
+          <td class = "title">pw</td>
+          <td><input type ="password"  th:field="*{Password1}"></td>
+        </tr>
+         <tr style="height:50px">
+          <td class = "title">pw확인</td>
+          <td><input type ="password"   th:field="*{password2}" ></td>
+        </tr>
+        <tr>
+          <td></td>
+        </tr>
+      </table>
+            <div class = "joinbtn">
+            <button type="submit">가입하기</button>
+      </div>
+      </form>
+      </div>
+  </main>
+</div>
+
+</body>
+
+</html>
+
